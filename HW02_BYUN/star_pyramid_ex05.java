@@ -4,6 +4,13 @@
  * HW#2 Last updated 09/29
  * appx. 5 hours total
  * Used IDE: IntelliJIDEA(Eclipse)
+  
+ *
+**
+***
+****
+*****
+
  **/
 
 public class Star_pyramid {
