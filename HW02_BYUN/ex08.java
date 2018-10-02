@@ -3,7 +3,7 @@
  * Justin Byun No partner at this stage
  * HW#2 Last updated 09/29
  * appx. 5 hours total
- * Used IDE: IntelliJIDEA(Eclipse)
+ * Used IDE: VSCode
 
      1
     22
@@ -21,6 +21,7 @@ public class EX08 {
  * Finally, add another j loop to print the num
 **/
   public static void main(String[] args) {
+    System.out.println("Exercise 8.");
     for(int i=1; i<=5; i++) {
       for(int j=0; j<5-i; j++) {
         System.out.print(" ");

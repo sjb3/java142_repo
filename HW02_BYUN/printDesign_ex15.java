@@ -14,9 +14,17 @@
   between th einner loop,
   odd numbers should be displayed, hence, set another int var odd and after each iteration add by 2
   to get the odd number and print out
+
+-----1-----
+----333----
+---55555---
+--7777777--
+-999999999-
+
 **/
 public class PrintDesign {
   public static void main(String[] args) {
+    System.out.println("Exercise 15.");
     int odd = 1;
     int initialSpace = 5;
 
@@ -33,7 +41,7 @@ public class PrintDesign {
       }
       System.out.println();
       odd+=2;
-      initialSpace-=1;
+      // initialSpace-=1;
     }
   }
 }

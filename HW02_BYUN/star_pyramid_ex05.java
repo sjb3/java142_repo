@@ -4,17 +4,21 @@
  * HW#2 Last updated 09/29
  * appx. 5 hours total
  * Used IDE: IntelliJIDEA(Eclipse)
+  
+*
+**
+***
+****
+*****
+
  **/
 
 public class Star_pyramid {
  /**
 From the given pattern,
-display portion increases as row changes (1-> 5) ; hence becomes the outer loop same as counter(i)
-whilest undisplaying part decreases (4 -> 0); hence it becomes 5-i(counter)
-for print,
-you can print i of *
-print 5-1 blank
-print new line
+display portion increases as row changes (1-> 5) ; hence becomes the outer loop same as counter(i) progresses
+whilest inside the loop, columns will be displayed as * but it will be affected by outer loop
+therefore, inner iteration will be affected by outer iteration
 **/
   public static void main(String[] args) {
     System.out.println("Exercise 5.");
