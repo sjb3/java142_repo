@@ -3,7 +3,7 @@
  * Justin Byun No partner at this stage
  * HW#2 Last updated 09/30
  * appx. 5 hours total
- * Used IDE: IntelliJIDEA(Eclipse)
+ * Used IDE: VSCode(MS)
  **/
 
 /**
@@ -11,9 +11,13 @@
   however inner loop, the first and last loop will be displaying the space that
   from the initial space(5), decresed by 1 for each iteration
 
-  between th einner loop,
+  between the inner loop,
   odd numbers should be displayed, hence, set another int var odd and after each iteration add by 2
   to get the odd number and print out
+
+  Here, - patterns are set and deducted as column progresses per iteration
+  Inside the loop, after setting the initial value,
+  incremented by 2 for the pattern
 
 -----1-----
 ----333----
@@ -41,7 +45,7 @@ public class PrintDesign {
       }
       System.out.println();
       odd+=2;
-      // initialSpace-=1;
+      initialSpace-=1;
     }
   }
 }
