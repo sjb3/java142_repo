@@ -1,17 +1,24 @@
 package com.example.java;
+import java.lang.Math;
 import java.util.*;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Enter the number you desire:");
+        /* prompt message to the end user to start off and take in the user inputs
+         * subsequently, pass the input value to the method area
+         *  And report results in the end
+         */
+        System.out.println("Enter the radius and height to calculate the surface area of a cylinder: ");
         Scanner console = new Scanner(System.in);
-        int input_num = console.nextInt();
-        printNumbers(input_num);
+        double radius = console.nextDouble();
+        double height = console.nextDouble();
+
+        System.out.println("Surface area of a cylinder is "+ cylinderSurfaceArea(radius, height));
     }
-    public static void printNumbers(int max) {
-        for(int i=0; i <= max; i++) {
-            System.out.print("[" +i+ "] ");
-        }
+    public static double cylinderSurfaceArea(double r, double h) {
+        // execute the proper math function after importing java.Math
+        double area = 2*Math.PI*r*(r + h);
+        return area;
     }
 }
