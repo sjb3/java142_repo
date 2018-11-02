@@ -24,11 +24,11 @@ public class Main {
 
     public static String showTwos(int n) {
         String answer = "";
-        int quo = 0;
+        // int quo = 0;
 
         while (n%2 ==0) {
             answer +=" 2 *";
-            quo = quo + (n/2);
+            // quo = quo + (n/2);
             n = n/2;
         }
         return " = " + answer + " " + n;

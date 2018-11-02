@@ -15,7 +15,7 @@ public class Main {
         System.out.println("makeGuesses #6");
         System.out.println("Total guesses :" + makeGuesses());
     }
-
+// try sentinel loop
     public static int makeGuesses() {
         Random rand = new Random();
         int count = 0;

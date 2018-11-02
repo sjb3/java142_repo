@@ -6,16 +6,32 @@ appx. 4hours elapsed
 Used IDE: IntelliJ(Eclipse)/VSCode(MS)
 */
 
-// By definition, the sum of the factors should be equal to max, given number
-// from the starting 0, if you add up all the factors it will be the max not including itself
-//
+package com.example.java;
+import java.util.*;
 
-public static int perfectNumbers(int max) {
-  int sum =0;
-  for(int i=0; i < max; i ++) {
-      if(max%i == 0) {
-          sum += i;
-      }
-  }
-  return sum;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner console = new Scanner(System.in);
+        System.out.println("Find Perfect Numbers!");
+        int num = console.nextInt();
+
+        System.out.print("Perfect Number upto " + num + " : ");
+        perfectNumbers(num);
+    }
+
+    public static void perfectNumbers(int n) {
+        int sum = 0;
+        boolean ans = false;
+        for(int i=1; i <n; i ++) {
+            if(n%i ==0) {
+                System.out.print(" " + i);
+                sum =+ i;
+            }
+        }
+        if (sum == n) {
+            System.out.print(sum + " ");
+        }
+
+    }
 }

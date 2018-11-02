@@ -1,26 +1,30 @@
 package com.example.java;
 import java.util.*;
-import java.io.*;
-import java.lang.Math;
 
 public class Main {
 
-    public static void main(String[] args)
-            throws FileNotFoundException {
-        Scanner input = new Scanner(new File("input.txt"));
-        apples(input);
+    public static void main(String[] args) {
+        System.out.println("printFactors #9");
+        System.out.println("Enter a number that you wanna print out the factors! ");
+        Scanner console = new Scanner(System.in);
+        int input = console.nextInt();
+        System.out.println(printFactors(input));
     }
 
-    public static void apples(Scanner input) {
+    public static String printFactors(int num) {
+        if(num<=0) {
+            System.out.println("Number shouldn\'t be negative or 0");
+        }
 
-            while (input.hasNextLine()) {
-                int id = input.nextInt();
-                String f_name = input.next();
-                String l_name = input.next();
+        String results = "";
 
-                System.out.printf("%d %s %s\n", id, f_name, l_name);
+        int i = 1;
+        while(i < num) {
+            if(num%i ==0) {
+                results += i + " and ";
             }
-
-
+            i++;
+        }
+        return results + num;
     }
 }

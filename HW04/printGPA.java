@@ -10,6 +10,8 @@ Used IDE: IntelliJ(Eclipse)/VSCode(MS)
 // prompt proper message to end users
 // compute average after accumulate sum for each iteration
 
+// revised on 11/01: less vars, less memory
+
 package com.example.java;
 import java.util.*;
 
@@ -26,14 +28,15 @@ public class Main {
         String name = console.next();
         System.out.print("Enter how many scores you wanna test: ");
         int times = console.nextInt();
-        double grade = 0;
-        double avg = 0;
+        double grade = 0.0;
+        // double avg = 0.0;
         System.out.println("Now enter each of the test score: ");
         for(int i=1; i<=times; i ++) {
-            int score = console.nextInt();
+            double score = console.nextInt();
             grade += score;
-            avg = (grade/times);
+//            avg = (grade/times);
         }
-        System.out.println(name + "\' grade is " + avg);
+        System.out.println(name + "\' grade is " + grade/times);
+//        System.out.println(name + "\' grade is " + avg);
     }
 }
