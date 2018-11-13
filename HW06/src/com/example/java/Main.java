@@ -3,22 +3,17 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        int [] seq1 = {1,6,2,1,4,1,2,1,8};
-        int [] seq2 = {1,2,1};
-
-        System.out.println("#14 contains: ");
-        System.out.println(contains(seq1, seq2));
+        String[] pal = {"alpha", "beta", "gamma", "Alpha"};
+        isPalindrome(pal);
     }
 
-    public static boolean contains(int[] a1, int[] a2) {
-        boolean answer = false;
-//         if(Arrays.asList(a1).containsAll(Arrays.asList(a2))) {
-//             answer = true;
-//         }
-        if(Arrays.asList(a1).contains(Arrays.asList(a2))) {
-            answer = true;
+    public static void isPalindrome(String[] pal) {
+        for(int i=0; i<=(pal.length-1)/2; i++) {
+            if (pal[i].equals(pal[pal.length-1-i])) {
+                System.out.println("true");
+            }
+
         }
-        return answer;
+        System.out.println("false");
     }
 }
-
