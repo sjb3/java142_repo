@@ -3,7 +3,7 @@ CSC142
 Justin Byun,  No partner at this time
 HW#09 Last updated 12/02
 Used IDE: MS VS_Code
-Test: passed
+Test:
 */
 
 public static double averageVowels(ArrayList<String> aList) {
