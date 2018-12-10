@@ -9,6 +9,7 @@ public class Main {
 
     public static boolean swaping(int[] a) {
         for(int i=0; i< a.length-1; i++) {
+          // if out of order
             if(a[i] > a[i+1]) {
                 // swaping happens here
                 int temp = a[i];
