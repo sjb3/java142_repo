@@ -1,15 +1,15 @@
 public class GameReview {
   // fields;
-  private String name;
-  private String developer;
+  private String name; // not null
+  private String developer; // not null
   private int graphics; // 1-5 rating
 
-  public GameReview(String initName, String initDeveloper, int initGraphics) {
-    setIniValue(initName, initDeveloper, initGraphics);
+  public GameReview(String initialName, String initialDeveloper, int initialGraphics) {
+    setIniValue(initialName, initialDeveloper, initialGraphics);
   }
 
-  public void setInitValie(String newName, String newDeveloper, int newGraphics) {
-    if(newName == null || newDeveloper == null || newGraphics <=0 || newGraphics >=6) {
+  public void setInitialValues(String newName, String newDeveloper, int newGraphics) {
+    if(newName == null || newDeveloper == null || newGraphics <1 || newGraphics > 5) {
       throw new IllegalArgumentException();
     }
     this.name = newName;
@@ -17,15 +17,15 @@ public class GameReview {
     this.graphics = newGraphics;
   }
   public String getName() {
-    return name;
+    return this.name;
   }
   public String getDeveloper() {
-    return developer;
+    return this.developer;
   }
   public int getGraphics() {
-    return graphics;
+    return this.graphics;
   }
   public String toString() {
-    return (...);
+    return ("The name is: " + getName() + ".  The developer is: " + getDeveloper() + ".  The rating is: " + getGraphics());
   }
 }
