@@ -8,10 +8,16 @@ public class Date {
     day = 1;
     year = 1900;
   }
+
+  public Date(int newDay, int newMonth, int newYear) {
+    this.day = newDay;
+    this.month = newMonth;
+    this.year = newYear;
+  }
   // setter
 
   public void setMonth(int month) {
-    if(this.month <1 || this.month >12) {
+    if(month <1 || month >12) {
       throw new IllegalArgumentException();
     }
     this.month = month;
@@ -26,20 +32,16 @@ public class Date {
       this.day = day;
     }
   }
-  public Date(int newDay, int newMonth, int newYear) {
-    this.day = newDay;
-    this.month = newMonth;
-    this.year = newYear;
-  }
+
   // getter
   public int getMonth() {
-    return month;
+    return this.month;
   }
   public int getDay() {
-    return day;
+    return this.day;
   }
   public int getYear() {
-    return year;
+    return this.year;
   }
 
   // method
@@ -53,7 +55,7 @@ public class Date {
       }
   }
   public String toString() {
-    return "_" + month + "_" + day + "_" + year;
+    return "_" + this.month + "_" + this.day + "_" + this.year;
   }
 }
 
@@ -67,9 +69,9 @@ public class MainDate {
 
     String returnVal = "";
     if(day1.equals(day2)) {
-      returnVal = true;
+      returnVal += true;
     } else {
-      returnVal =  false;
+      returnVal += false;
     }
   }
 }

@@ -2,7 +2,7 @@
 // consider, first array will be iterated from the first to the second to the last el
 // comparing next array will be iterated from the second to the last el of the same array.
 
-public class CheckDups {
+public class Check4Dups {
   public static void main(String[] args) {
     int[] arr = {1,2,5,4,3,6,2,3,1};
 
